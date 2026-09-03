@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AdMuse Studio - Helping creators and businesses grow with Websites, Reels, Photography, Video Shoots, and Ads.">
+  <title>AdMuse Studio | Websites & Content Creation</title>
+  
+  <!-- Favicon Added Here -->
+  <link rel="icon" type="image/png" href="images/AdMuseStudio.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --orange:#ff8a00;
+      --orange2:#ffad32;
+      --dark:#111111;
+      --muted:#6b6b6b;
+      --cream:#fffaf3;
+      --white:#ffffff;
+      --line:#eee5d9;
+      --shadow:0 18px 50px rgba(40,25,10,.10);
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:Inter,Arial,sans-serif;
+      color:var(--dark);
+      background:var(--cream);
+      line-height:1.6;
+    }
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+
+    .container{width:min(1180px,92%);margin:auto}
+
+    /* NAV */
+    nav{
+      position:sticky;
+      top:0;
+      z-index:100;
+      background:rgba(255,250,243,.92);
+      backdrop-filter:blur(14px);
+      border-bottom:1px solid rgba(238,229,217,.8);
+    }
+    .nav-inner{
+      height:76px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:30px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      font-weight:900;
+      font-size:20px;
+    }
+    .brand img {
+      height: 48px;
+      width: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(255,138,0,.2);
+    }
+    .brand span{letter-spacing:-.5px}
+    .nav-links{display:flex;gap:28px;font-size:14px;font-weight:600}
+    .nav-links a:hover{color:var(--orange)}
+    .nav-cta{
+      background:var(--dark);color:white;
+      padding:11px 18px;border-radius:999px;
+      font-size:14px;font-weight:700;
+    }
+    .nav-cta:hover{background:var(--orange)}
+
+    /* HERO */
+    .hero{
+      padding:90px 0 75px;
+      position:relative;
+      overflow:hidden;
+    }
+    .hero:before,.hero:after{
+      content:"";position:absolute;border-radius:50%;
+      pointer-events:none;z-index:-1;
+    }
+    .hero:before{
+      width:460px;height:460px;
+      right:-180px;top:-150px;
+      background:rgba(255,138,0,.10);
+    }
+    .hero:after{
+      width:260px;height:260px;
+      left:-130px;bottom:-100px;
+      background:rgba(255,173,50,.12);
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      align-items:center;
+      gap:70px;
+    }
+    .eyebrow{
+      display:inline-flex;align-items:center;gap:8px;
+      background:#fff1df;border:1px solid #ffd9a7;
+      color:#d96d00;padding:8px 13px;border-radius:999px;
+      font-size:12px;font-weight:800;text-transform:uppercase;
+      letter-spacing:1px;
+      margin-bottom:22px;
+    }
+    .dot{width:7px;height:7px;border-radius:50%;background:var(--orange)}
+    h1{
+      font-size:clamp(42px,6vw,76px);
+      line-height:.98;
+      letter-spacing:-3.5px;
+      max-width:720px;
+    }
+    h1 span{color:var(--orange)}
+    .hero p{
+      margin-top:24px;
+      max-width:620px;
+      color:var(--muted);
+      font-size:18px;
+    }
+    .hero-actions{
+      display:flex;flex-wrap:wrap;gap:12px;margin-top:30px
+    }
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:14px 21px;border-radius:12px;
+      font-weight:800;font-size:14px;
+      transition:.2s ease;
+      cursor:pointer;
+      border:none;
+    }
+    .btn-primary{background:var(--orange);color:white;box-shadow:0 12px 25px rgba(255,138,0,.25)}
+    .btn-primary:hover{transform:translateY(-2px);background:#ef7900}
+    .btn-secondary{background:white;border:1px solid var(--line)}
+    .btn-secondary:hover{border-color:#ffc06b}
+
+    .hero-card{
+      background:var(--dark);
+      border-radius:30px;
+      padding:22px;
+      min-height:430px;
+      box-shadow:var(--shadow);
+      transform:rotate(1.5deg);
+      position:relative;
+      overflow:hidden;
+    }
+    .hero-card img{width:100%;height:100%;object-fit:cover;border-radius:18px;display:block;position:relative;z-index:2}
+    .hero-card:after{
+      content:"";
+      position:absolute;width:280px;height:280px;
+      border-radius:50%;right:-80px;bottom:-90px;
+      background:var(--orange);
+    }
+    .browser{
+      position:relative;z-index:2;
+      background:white;border-radius:18px;
+      overflow:hidden;
+      box-shadow:0 15px 40px rgba(0,0,0,.2);
+    }
+    .mock-site{
+      height:330px;
+      padding:35px;
+      background:linear-gradient(135deg,#fff,#fff5e8);
+      position:relative;
+    }
+    .mock-site .small{font-size:11px;font-weight:800;color:#777}
+    .mock-site h2{font-size:39px;line-height:1.05;margin-top:35px;max-width:300px}
+    .mock-site h2 span{color:var(--orange)}
+    .mock-btn{display:inline-block;margin-top:20px;background:var(--orange);color:white;padding:10px 16px;border-radius:8px;font-size:11px;font-weight:800}
+    .mock-circle{
+      position:absolute;width:190px;height:190px;border-radius:50%;
+      background:var(--orange);right:30px;bottom:25px;
+    }
+
+    /* TRUST BAR */
+    .trust{
+      background:var(--dark);color:white;padding:18px 0
+    }
+    .trust-row{
+      display:flex;justify-content:center;flex-wrap:wrap;
+      gap:35px;color:#ddd;font-size:13px;font-weight:600
+    }
+    .trust-row strong{color:var(--orange)}
+
+    /* SECTION */
+    section{padding:85px 0}
+    .section-head{text-align:center;max-width:700px;margin:0 auto 45px}
+    .section-kicker{
+      color:var(--orange);font-size:12px;font-weight:900;
+      text-transform:uppercase;letter-spacing:1.6px
+    }
+    .section-head h2{
+      font-size:clamp(32px,4vw,48px);
+      line-height:1.05;letter-spacing:-2px;margin-top:10px
+    }
+    .section-head p{color:var(--muted);margin-top:13px}
+
+    /* SERVICES (NEW) */
+    .services{background:white; padding-bottom:40px;}
+    
+    /* DEMOS */
+    .filters{
+      display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:30px
+    }
+    .filter{
+      border:1px solid var(--line);background:white;
+      padding:9px 14px;border-radius:999px;
+      font-size:12px;font-weight:700;cursor:pointer;
+    }
+    .filter.active,.filter:hover{
+      background:var(--orange);border-color:var(--orange);color:white
+    }
+    .demo-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:22px;
+    }
+    .demo-card{
+      background:white;border:1px solid var(--line);
+      border-radius:20px;overflow:hidden;
+      transition:.25s ease;
+      box-shadow:0 8px 28px rgba(30,20,10,.04)
+    }
+    .demo-card:hover{
+      transform:translateY(-6px);
+      box-shadow:var(--shadow);
+    }
+    .demo-preview{
+      height:205px;
+      background:#f4eee6;
+      position:relative;
+      overflow:hidden;
+    }
+    .demo-preview > img{width:100%;height:100%;object-fit:cover}
+    .demo-info{padding:20px}
+    .demo-info h3{font-size:18px}
+    .demo-info p{font-size:13px;color:var(--muted);margin:6px 0 16px}
+    .demo-meta{display:flex;align-items:center;justify-content:space-between;gap:10px}
+    .tag{font-size:11px;font-weight:800;background:#fff1df;color:#d96d00;padding:6px 9px;border-radius:999px}
+    .view{font-size:12px;font-weight:900;color:var(--orange)}
+
+    /* WHY/BENEFITS */
+    .why{background:white}
+    .benefit-grid{
+      display:grid;grid-template-columns:repeat(4,1fr);gap:18px
+    }
+    .benefit{
+      padding:27px;border:1px solid var(--line);border-radius:18px;background:#fffaf3
+    }
+    .icon{
+      width:42px;height:42px;border-radius:12px;
+      display:grid;place-items:center;background:var(--orange);color:white;
+      font-size:18px;margin-bottom:18px
+    }
+    .benefit h3{font-size:16px;margin-bottom:6px}
+    .benefit p{font-size:13px;color:var(--muted)}
+
+    /* OFFER */
+    .offer-wrap{padding-top:20px}
+    .offer{
+      background:var(--dark);color:white;border-radius:28px;
+      padding:55px 60px;display:grid;grid-template-columns:1fr auto;
+      align-items:center;gap:40px;overflow:hidden;position:relative
+    }
+    .offer:after{
+      content:"";position:absolute;width:380px;height:380px;border-radius:50%;
+      background:var(--orange);right:-180px;top:-180px;opacity:.9
+    }
+    .offer h2{font-size:clamp(30px,4vw,48px);line-height:1.05;letter-spacing:-2px;position:relative;z-index:1}
+    .offer h2 span{color:var(--orange)}
+    .offer p{color:#cfcfcf;margin-top:12px;max-width:650px;position:relative;z-index:1}
+    .price{text-align:center;position:relative;z-index:2}
+    .price small{display:block;color:#ddd;font-weight:700}
+    .price strong{display:block;font-size:66px;line-height:1;color:var(--orange);letter-spacing:-4px}
+    .price em{font-style:normal;color:white;font-size:15px}
+
+    /* CTA / CONTACT FORM */
+    .cta{text-align:center; padding-bottom:90px;}
+    .cta h2{font-size:clamp(32px,4vw,50px);letter-spacing:-2px;line-height:1.05}
+    .cta p{color:var(--muted);max-width:600px;margin:14px auto 25px}
+    
+    .contact-form {
+      max-width: 650px;
+      margin: 40px auto 0;
+      text-align: left;
+      display: grid;
+      gap: 20px;
+      background: white;
+      padding: 35px;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--line);
+    }
+    .form-group { display: flex; flex-direction: column; gap: 8px; }
+    .form-group label { font-size: 13px; font-weight: 700; color: var(--dark); }
+    .form-group input, .form-group select, .form-group textarea {
+      padding: 14px 16px; border: 1px solid var(--line); border-radius: 10px;
+      font-family: inherit; font-size: 14px; background: #fffaf3; transition: .2s;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      outline: none; border-color: var(--orange); box-shadow: 0 0 0 3px rgba(255,138,0,0.1);
+    }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+    footer{
+      background:#0d0d0d;color:white;padding:32px 0
+    }
+    .footer-row{display:flex;justify-content:space-between;align-items:center;gap:20px}
+    .footer-brand{font-weight:900}
+    .footer-brand span{color:var(--orange)}
+    footer p{color:#999;font-size:12px}
+
+    /* RESPONSIVE */
+    @media(max-width:900px){
+      .hero-grid{grid-template-columns:1fr;gap:40px}
+      .hero-card{max-width:650px;margin:auto}
+      .demo-grid{grid-template-columns:repeat(2,1fr)}
+      .benefit-grid{grid-template-columns:repeat(2,1fr)}
+      .offer{grid-template-columns:1fr;padding:42px}
+      .price{text-align:left}
+    }
+    @media(max-width:650px){
+      .nav-links{display:none}
+      .nav-inner{height:68px}
+      .nav-cta{padding:9px 13px}
+      .hero{padding:65px 0 50px}
+      h1{letter-spacing:-2.5px}
+      .hero p{font-size:16px}
+      .hero-card{padding:12px;border-radius:20px;min-height:330px}
+      .mock-site{height:250px;padding:24px}
+      .mock-site h2{font-size:27px;margin-top:25px}
+      .mock-circle{width:130px;height:130px}
+      section{padding:65px 0}
+      .demo-grid,.benefit-grid{grid-template-columns:1fr}
+      .offer{padding:32px 25px}
+      .price strong{font-size:55px}
+      .form-row{grid-template-columns:1fr}
+      .contact-form{padding: 25px;}
+      .footer-row{flex-direction:column;align-items:flex-start}
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a href="#" class="brand">
+      <!-- Logo Added Here -->
+      <img src="images/AdMuseStudio.png" alt="AdMuse Studio Logo">
+      <span>AdMuse <small>STUDIO</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#demos">Demos</a>
+      <a href="#why">Why Us?</a>
+    </div>
+    <a href="#contact" class="nav-cta">Collaborate</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow"><i class="dot"></i> Web Development & Content Creation</div>
+      <h1>Helping creators & brands <span>grow.</span></h1>
+      <p>
+        From stunning website designs to 🎬 Reels, 📸 Photography, 🎥 Video Shoots, 🌍 Travel, Ads, and Vlogging content. We build your digital success.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">DM to Collaborate 🚀</a>
+        <a href="#demos" class="btn btn-secondary">Explore Website Demos</a>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="browser">
+        <img src="images/hero.jpg" alt="Modern website and content design showcase">
+        <div class="mock-site">
+          <div class="small">YOUR BRAND</div>
+          <h2>We Build <span>Digital Success.</span></h2>
+          <div class="mock-btn">Get Started</div>
+          <div class="mock-circle"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="trust">
+  <div class="container trust-row">
+    <span><strong>✓</strong> Website Design</span>
+    <span><strong>✓</strong> Video Shoots & Reels</span>
+    <span><strong>✓</strong> Photography</span>
+    <span><strong>✓</strong> Ads & Campaigns</span>
+    <span><strong>✓</strong> Travel & Vlogging Content</span>
+  </div>
+</div>
+
+<section id="services" class="services">
+  <div class="container">
+    <div class="section-head" style="margin-top: 40px;">
+      <div class="section-kicker">Our Services</div>
+      <h2>Everything you need to stand out.</h2>
+      <p>We offer end-to-end digital and content creation services for creators, startups, and small businesses.</p>
+    </div>
+
+    <div class="benefit-grid">
+      <div class="benefit"><div class="icon">💻</div><h3>Website Development</h3><p>Clean, mobile-friendly designs to convert visitors into clients.</p></div>
+      <div class="benefit"><div class="icon">🎬</div><h3>Reels & Vlogs</h3><p>High-engaging short-form content and vlogs built for virality.</p></div>
+      <div class="benefit"><div class="icon">📸</div><h3>Photography</h3><p>Professional product, personal, and brand photography.</p></div>
+      <div class="benefit"><div class="icon">🎥</div><h3>Video Shoots & Ads</h3><p>Cinematic travel, commercial, and high-quality ad campaigns.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="demos" style="padding-top:0;">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-kicker">Website Demo Collection</div>
+      <h2>Choose a design for your business</h2>
+      <p>These are sample concepts. Your actual website can be customized with your logo, colors, photos, content and contact details.</p>
+    </div>
+
+    <div class="filters">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="business">Business</button>
+      <button class="filter" data-filter="education">Education</button>
+      <button class="filter" data-filter="travel">Travel</button>
+      <button class="filter" data-filter="community">Community</button>
+      <button class="filter" data-filter="products">Products</button>
+      <button class="filter" data-filter="services">Services</button>
+    </div>
+
+    <div class="demo-grid">
+      <article class="demo-card" data-category="education">
+        <div class="demo-preview"><img src="images/school.jpg" alt="School website demo"></div>
+        <div class="demo-info">
+          <h3>Bright Future School</h3>
+          <p>Clean and trustworthy website for schools, academies and educational institutions.</p>
+          <div class="demo-meta"><span class="tag">Education</span><a class="view" href="#" target="_blank">View Demo ↗</a></div>
+        </div>
+      </article>
+
+      <article class="demo-card" data-category="business">
+        <div class="demo-preview"><img src="images/business.jpg" alt="Business website demo"></div>
+        <div class="demo-info">
+          <h3>Prime Business</h3>
+          <p>Professional one-page presence for local businesses, consultants and startups.</p>
+          <div class="demo-meta"><span class="tag">Business</span><a class="view" href="#" target="_blank">View Demo ↗</a></div>
+        </div>
+      </article>
+
+      <article class="demo-card" data-category="travel">
+        <div class="demo-preview"><img src="images/travel.jpg" alt="Travel website demo"></div>
+        <div class="demo-info">
+          <h3>WanderGo Travels</h3>
+          <p>Destination-focused design for travel agencies, tour operators and trip planners.</p>
+          <div class="demo-meta"><span class="tag">Travel</span><a class="view" href="#" target="_blank">View Demo ↗</a></div>
+        </div>
+      </article>
+
+      <article class="demo-card" data-category="community">
+        <div class="demo-preview"><img src="images/community.jpg" alt="Community website demo"></div>
+        <div class="demo-info">
+          <h3>Hyderabad Creators Club</h3>
+          <p>Modern community website for clubs, groups, events and member networks.</p>
+          <div class="demo-meta"><span class="tag">Community</span><a class="view" href="#" target="_blank">View Demo ↗</a></div>
+        </div>
+      </article>
+
+      <article class="demo-card" data-category="products">
+        <div class="demo-preview"><img src="images/products.jpg" alt="Products website demo"></div>
+        <div class="demo-info">
+          <h3>Urban Home Store</h3>
+          <p>Static product catalogue to showcase products, prices, specifications and enquiries.</p>
+          <div class="demo-meta"><span class="tag">Products</span><a class="view" href="#" target="_blank">View Demo ↗</a></div>
+        </div>
+      </article>
+
+      <article class="demo-card" data-category="products">
+        <div class="demo-preview"><img src="images/beauty.jpg" alt="Beauty website demo"></div>
+        <div class="demo-info">
+          <h3>Glow Beauty</h3>
+          <p>Elegant product showcase for beauty, skincare, cosmetics and lifestyle brands.</p>
+          <div class="demo-meta"><span class="tag">Beauty</span><a class="view" href="#" target="_blank">View Demo ↗</a></div>
+        </div>
+      </article>
+
+      <article class="demo-card" data-category="services">
+        <div class="demo-preview"><img src="images/salon.jpg" alt="Salon website demo"></div>
+        <div class="demo-info">
+          <h3>Luxe Salon</h3>
+          <p>Stylish service website for salons, beauty parlours, spas and wellness businesses.</p>
+          <div class="demo-meta"><span class="tag">Services</span><a class="view" href="#" target="_blank">View Demo ↗</a></div>
+        </div>
+      </article>
+
+      <article class="demo-card" data-category="services">
+        <div class="demo-preview"><img src="images/fitness.jpg" alt="Fitness website demo"></div>
+        <div class="demo-info">
+          <h3>FitZone Fitness</h3>
+          <p>Energetic landing page for gyms, personal trainers, yoga studios and fitness centres.</p>
+          <div class="demo-meta"><span class="tag">Fitness</span><a class="view" href="#" target="_blank">View Demo ↗</a></div>
+        </div>
+      </article>
+
+      <article class="demo-card" data-category="business">
+        <div class="demo-preview"><img src="images/photography.jpg" alt="Photography website demo"></div>
+        <div class="demo-info">
+          <h3>Moments Studio</h3>
+          <p>Portfolio-style website for photographers, designers, artists and creative professionals.</p>
+          <div class="demo-meta"><span class="tag">Creative</span><a class="view" href="#" target="_blank">View Demo ↗</a></div>
+        </div>
+      </article>
+
+      <article class="demo-card" data-category="community">
+        <div class="demo-preview"><img src="images/ngo.jpg" alt="Ngo website demo"></div>
+        <div class="demo-info">
+          <h3>Hope Foundation</h3>
+          <p>Simple, credible online presence for NGOs, charities and community organizations.</p>
+          <div class="demo-meta"><span class="tag">NGO</span><a class="view" href="#" target="_blank">View Demo ↗</a></div>
+        </div>
+      </article>
+
+      <article class="demo-card" data-category="business">
+        <div class="demo-preview"><img src="images/realestate.jpg" alt="Realestate website demo"></div>
+        <div class="demo-info">
+          <h3>Prime Properties</h3>
+          <p>Property showcase website for real-estate agents and independent property consultants.</p>
+          <div class="demo-meta"><span class="tag">Real Estate</span><a class="view" href="#" target="_blank">View Demo ↗</a></div>
+        </div>
+      </article>
+
+      <article class="demo-card" data-category="business">
+        <div class="demo-preview"><img src="images/bakery.jpg" alt="Bakery website demo"></div>
+        <div class="demo-info">
+          <h3>Bake House</h3>
+          <p>Warm and visual website for bakeries, cafes, home bakers and food businesses.</p>
+          <div class="demo-meta"><span class="tag">Food</span><a class="view" href="#" target="_blank">View Demo ↗</a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="why" class="why">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-kicker">Why AdMuse Studio?</div>
+      <h2>Turn your vision into reality.</h2>
+      <p>Whether you need a digital storefront or viral content, we make sure you look professional and reachable 24/7.</p>
+    </div>
+
+    <div class="benefit-grid">
+      <div class="benefit"><div class="icon">↗</div><h3>Build Credibility</h3><p>Give customers a professional place to learn about your business or brand.</p></div>
+      <div class="benefit"><div class="icon">◎</div><h3>Reach More People</h3><p>Share your website or video campaigns on Google, Instagram, and WhatsApp.</p></div>
+      <div class="benefit"><div class="icon">✦</div><h3>Showcase Your Work</h3><p>Present your services, products, pricing, and content portfolio clearly.</p></div>
+      <div class="benefit"><div class="icon">24</div><h3>Available 24/7</h3><p>Your online presence stays active even when you are offline.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="offer" class="offer-wrap">
+  <div class="container">
+    <div class="offer">
+      <div>
+        <h2>Launch your business online for <span>₹1,999/-</span></h2>
+        <p>Get a clean, modern one-page static website designed for your business, with mobile-friendly design, domain, SSL certificate and essential business sections.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">I Want a Website</a>
+        </div>
+      </div>
+      <div class="price">
+        <small>STARTING AT</small>
+        <strong>₹1,999</strong>
+        <em>one-page website*</em>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="cta">
+  <div class="container">
+    <div class="section-kicker">DM to Collaborate 🚀</div>
+    <h2>Let's build your brand.</h2>
+    <p>Fill out the form below to enquire about Websites, Reels, Photography, Video Shoots, or Ad campaigns.</p>
+    
+    <form class="contact-form" action="#" method="POST">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+        </div>
+        <div class="form-group">
+          <label for="mobile">Mobile</label>
+          <input type="tel" id="mobile" name="mobile" placeholder="Your Mobile Number" required>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="client_type">Company or Personal?</label>
+          <select id="client_type" name="client_type" required>
+            <option value="" disabled selected>Select an option...</option>
+            <option value="company">Company / Business</option>
+            <option value="personal">Personal / Creator</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="service_type">Type of Service Looking For</label>
+          <select id="service_type" name="service_type" required>
+            <option value="" disabled selected>Select a service...</option>
+            <option value="website">Website Development</option>
+            <option value="reels">🎬 Reels & Short Form</option>
+            <option value="photography">📸 Photography</option>
+            <option value="video">🎥 Video Shoots</option>
+            <option value="travel">🌍 Travel Content</option>
+            <option value="ads">Ads / Campaigns</option>
+            <option value="vlogging">Vlogging Content</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Project Details</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell us more about what you're looking to create..." required></textarea>
+      </div>
+      
+      <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 16px; padding: 16px;">Send Message</button>
+    </form>
+    
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-row">
+    <div class="footer-brand">AdMuse <span>STUDIO</span></div>
+    <p>© 2026 AdMuse Studio. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  const filters = document.querySelectorAll('.filter');
+  const cards = document.querySelectorAll('.demo-card');
+
+  filters.forEach(button => {
+    button.addEventListener('click', () => {
+      filters.forEach(b => b.classList.remove('active'));
+      button.classList.add('active');
+
+      const filter = button.dataset.filter;
+      cards.forEach(card => {
+        card.style.display =
+          filter === 'all' || card.dataset.category === filter
+          ? ''
+          : 'none';
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
