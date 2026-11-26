@@ -40,3 +40,17 @@ The seven decorative photos are referenced from Pexels CDN rather than bundled l
 The default white theme and existing logo/favicon are retained. The home page now has Business, Creator Hub, Growth & AI, creator experiences, website concept previews, and switchable business/creator prices. All enquiry buttons preselect the related service. Monthly creator prices are illustrative starting prices; define scope and usage fees before publishing.
 
 Configure `config.js` with your actual email and WhatsApp number. The static site does not send enquiries to a backend or process bookings/payments. Creator experiences collect interest only. For live commercial hosting, connect the GitHub repo to an appropriate hosting provider such as Cloudflare Pages, with no build command and the repository root as output. Review privacy text and photo references before launch. Remote images may not load on every network; original SVG fallbacks are included for the creator panels.
+
+## Multi-page edition
+The homepage is an overview. Each footer item opens a standalone page with shared navigation, branding, stylesheet, and script. The nine page files are:
+- `business-solutions.html` — Business solutions
+- `creator-hub.html` — Creator Hub
+- `growth-ai.html` — Growth & AI
+- `creator-experiences.html` — Creator experiences
+- `website-concepts.html` — Website concepts
+- `pricing.html` — Pricing
+- `about.html` — About
+- `contact.html` — Contact
+- `privacy.html` — Privacy
+
+Edit each HTML file for its page-specific content. The shared service and price arrays remain in app.js. Enquiry buttons link to contact.html with the related service preselected; pricing.html?plan=creator opens creator subscriptions. Upload all files at the repository root, including the assets folder.
