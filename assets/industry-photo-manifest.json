@@ -1,0 +1,506 @@
+{
+  "travel": {
+    "industry": "Travel & Tourism",
+    "hero": {
+      "src": "assets/industry-photos/travel-0.webp",
+      "fallback": "assets/industry-photos/travel-0.webp",
+      "alt": "Illustrative Travel & Tourism imagery"
+    },
+    "items": [
+      {
+        "name": "Kashmir Escape",
+        "src": "assets/industry-photos/travel-1.webp",
+        "fallback": "assets/industry-photos/travel-1.webp",
+        "alt": "Illustrative sample: Kashmir Escape"
+      },
+      {
+        "name": "Goa Coast",
+        "src": "assets/industry-photos/travel-2.webp",
+        "fallback": "assets/industry-photos/travel-2.webp",
+        "alt": "Illustrative sample: Goa Coast"
+      },
+      {
+        "name": "Kerala Retreat",
+        "src": "assets/industry-photos/travel-3.webp",
+        "fallback": "assets/industry-photos/travel-3.webp",
+        "alt": "Illustrative sample: Kerala Retreat"
+      }
+    ]
+  },
+  "real-estate": {
+    "industry": "Real Estate",
+    "hero": {
+      "src": "assets/industry-photos/real-estate-0.webp",
+      "fallback": "assets/industry-photos/real-estate-0.webp",
+      "alt": "Illustrative Real Estate imagery"
+    },
+    "items": [
+      {
+        "name": "Skyline Residences",
+        "src": "assets/industry-photos/real-estate-1.webp",
+        "fallback": "assets/industry-photos/real-estate-1.webp",
+        "alt": "Illustrative sample: Skyline Residences"
+      },
+      {
+        "name": "The Courtyard",
+        "src": "assets/industry-photos/real-estate-2.webp",
+        "fallback": "assets/industry-photos/real-estate-2.webp",
+        "alt": "Illustrative sample: The Courtyard"
+      },
+      {
+        "name": "Urban Nest",
+        "src": "assets/industry-photos/real-estate-3.webp",
+        "fallback": "assets/industry-photos/real-estate-3.webp",
+        "alt": "Illustrative sample: Urban Nest"
+      }
+    ]
+  },
+  "restaurant": {
+    "industry": "Restaurants & Cafés",
+    "hero": {
+      "src": "assets/industry-photos/restaurant-0.webp",
+      "fallback": "assets/industry-photos/restaurant-0.webp",
+      "alt": "Illustrative Restaurants & Cafés imagery"
+    },
+    "items": [
+      {
+        "name": "Garden flatbread",
+        "src": "assets/industry-photos/restaurant-1.webp",
+        "fallback": "assets/industry-photos/restaurant-1.webp",
+        "alt": "Illustrative sample: Garden flatbread"
+      },
+      {
+        "name": "Mushroom risotto",
+        "src": "assets/industry-photos/restaurant-2.webp",
+        "fallback": "assets/industry-photos/restaurant-2.webp",
+        "alt": "Illustrative sample: Mushroom risotto"
+      },
+      {
+        "name": "Chocolate tart",
+        "src": "assets/industry-photos/restaurant-3.webp",
+        "fallback": "assets/industry-photos/restaurant-3.webp",
+        "alt": "Illustrative sample: Chocolate tart"
+      }
+    ]
+  },
+  "healthcare": {
+    "industry": "Healthcare & Clinics",
+    "hero": {
+      "src": "https://images.pexels.com/photos/5452252/pexels-photo-5452252.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "fallback": "assets/industry-photos/healthcare-0.webp",
+      "alt": "Illustrative Healthcare & Clinics imagery"
+    },
+    "items": [
+      {
+        "name": "General consultation",
+        "src": "https://images.pexels.com/photos/4266936/pexels-photo-4266936.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/healthcare-0.webp",
+        "alt": "Illustrative sample: General consultation"
+      },
+      {
+        "name": "Dental check-up",
+        "src": "https://images.pexels.com/photos/3845811/pexels-photo-3845811.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/healthcare-0.webp",
+        "alt": "Illustrative sample: Dental check-up"
+      },
+      {
+        "name": "Physiotherapy",
+        "src": "https://images.pexels.com/photos/31234755/pexels-photo-31234755.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/healthcare-0.webp",
+        "alt": "Illustrative sample: Physiotherapy"
+      }
+    ]
+  },
+  "professional": {
+    "industry": "Professional Services",
+    "hero": {
+      "src": "https://images.pexels.com/photos/9301312/pexels-photo-9301312.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "fallback": "assets/industry-photos/professional-0.webp",
+      "alt": "Illustrative Professional Services imagery"
+    },
+    "items": [
+      {
+        "name": "Business strategy",
+        "src": "https://images.pexels.com/photos/36733327/pexels-photo-36733327.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/professional-0.webp",
+        "alt": "Illustrative sample: Business strategy"
+      },
+      {
+        "name": "Financial planning",
+        "src": "https://images.pexels.com/photos/33175651/pexels-photo-33175651.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/professional-0.webp",
+        "alt": "Illustrative sample: Financial planning"
+      },
+      {
+        "name": "Operations review",
+        "src": "https://images.pexels.com/photos/36733326/pexels-photo-36733326.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/professional-0.webp",
+        "alt": "Illustrative sample: Operations review"
+      }
+    ]
+  },
+  "retail": {
+    "industry": "Retail & E-commerce",
+    "hero": {
+      "src": "https://images.pexels.com/photos/5424922/pexels-photo-5424922.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "fallback": "assets/industry-photos/retail-0.webp",
+      "alt": "Illustrative Retail & E-commerce imagery"
+    },
+    "items": [
+      {
+        "name": "Canvas tote",
+        "src": "https://images.pexels.com/photos/35685413/pexels-photo-35685413.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/retail-0.webp",
+        "alt": "Illustrative sample: Canvas tote"
+      },
+      {
+        "name": "Ceramic mug",
+        "src": "https://images.pexels.com/photos/7828279/pexels-photo-7828279.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/retail-0.webp",
+        "alt": "Illustrative sample: Ceramic mug"
+      },
+      {
+        "name": "Linen notebook",
+        "src": "https://images.pexels.com/photos/5717478/pexels-photo-5717478.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/retail-0.webp",
+        "alt": "Illustrative sample: Linen notebook"
+      }
+    ]
+  },
+  "creators": {
+    "industry": "Influencers & Content Creators",
+    "hero": {
+      "src": "https://images.pexels.com/photos/12432824/pexels-photo-12432824.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "fallback": "assets/industry-photos/creators-0.webp",
+      "alt": "Illustrative Influencers & Content Creators imagery"
+    },
+    "items": [
+      {
+        "name": "A weekend away",
+        "src": "https://images.pexels.com/photos/35554001/pexels-photo-35554001.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/creators-1.webp",
+        "alt": "Illustrative sample: A weekend away"
+      },
+      {
+        "name": "Everyday rituals",
+        "src": "https://images.pexels.com/photos/9031799/pexels-photo-9031799.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/creators-0.webp",
+        "alt": "Illustrative sample: Everyday rituals"
+      },
+      {
+        "name": "Brand story",
+        "src": "https://images.pexels.com/photos/17094502/pexels-photo-17094502.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/creators-3.webp",
+        "alt": "Illustrative sample: Brand story"
+      }
+    ]
+  },
+  "school": {
+    "industry": "Schools & Educational Institutions",
+    "hero": {
+      "src": "https://images.pexels.com/photos/20432916/pexels-photo-20432916.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "fallback": "assets/industry-photos/school-0.webp",
+      "alt": "Illustrative Schools & Educational Institutions imagery"
+    },
+    "items": [
+      {
+        "name": "Early years",
+        "src": "https://images.pexels.com/photos/8422126/pexels-photo-8422126.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/school-0.webp",
+        "alt": "Illustrative sample: Early years"
+      },
+      {
+        "name": "Primary programme",
+        "src": "https://images.pexels.com/photos/7743256/pexels-photo-7743256.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/school-0.webp",
+        "alt": "Illustrative sample: Primary programme"
+      },
+      {
+        "name": "Middle school",
+        "src": "https://images.pexels.com/photos/6683485/pexels-photo-6683485.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/school-0.webp",
+        "alt": "Illustrative sample: Middle school"
+      }
+    ]
+  },
+  "sports": {
+    "industry": "Sports & Gaming Arenas",
+    "hero": {
+      "src": "https://images.pexels.com/photos/8007412/pexels-photo-8007412.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "fallback": "assets/industry-photos/sports-0.webp",
+      "alt": "Illustrative Sports & Gaming Arenas imagery"
+    },
+    "items": [
+      {
+        "name": "Cricket turf",
+        "src": "https://images.pexels.com/photos/32801556/pexels-photo-32801556.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/sports-0.webp",
+        "alt": "Illustrative sample: Cricket turf"
+      },
+      {
+        "name": "Badminton court",
+        "src": "https://images.pexels.com/photos/8796050/pexels-photo-8796050.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/sports-0.webp",
+        "alt": "Illustrative sample: Badminton court"
+      },
+      {
+        "name": "Gaming lounge",
+        "src": "https://images.pexels.com/photos/9072208/pexels-photo-9072208.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/sports-0.webp",
+        "alt": "Illustrative sample: Gaming lounge"
+      }
+    ]
+  },
+  "hotels": {
+    "industry": "Hotels, Resorts & Homestays",
+    "hero": {
+      "src": "https://images.pexels.com/photos/15173125/pexels-photo-15173125.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "fallback": "assets/industry-photos/hotels-0.webp",
+      "alt": "Illustrative Hotels, Resorts & Homestays imagery"
+    },
+    "items": [
+      {
+        "name": "Garden room",
+        "src": "https://images.pexels.com/photos/14025037/pexels-photo-14025037.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/hotels-1.webp",
+        "alt": "Illustrative sample: Garden room"
+      },
+      {
+        "name": "Lake suite",
+        "src": "https://images.pexels.com/photos/39894350/pexels-photo-39894350.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/hotels-0.webp",
+        "alt": "Illustrative sample: Lake suite"
+      },
+      {
+        "name": "Family cottage",
+        "src": "https://images.pexels.com/photos/12825195/pexels-photo-12825195.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/hotels-3.webp",
+        "alt": "Illustrative sample: Family cottage"
+      }
+    ]
+  },
+  "beauty": {
+    "industry": "Beauty Salons & Spas",
+    "hero": {
+      "src": "https://images.pexels.com/photos/7750090/pexels-photo-7750090.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "fallback": "assets/industry-photos/beauty-0.webp",
+      "alt": "Illustrative Beauty Salons & Spas imagery"
+    },
+    "items": [
+      {
+        "name": "Signature facial",
+        "src": "https://images.pexels.com/photos/5128223/pexels-photo-5128223.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/beauty-0.webp",
+        "alt": "Illustrative sample: Signature facial"
+      },
+      {
+        "name": "Hair styling",
+        "src": "https://images.pexels.com/photos/13714794/pexels-photo-13714794.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/beauty-0.webp",
+        "alt": "Illustrative sample: Hair styling"
+      },
+      {
+        "name": "Relaxation massage",
+        "src": "https://images.pexels.com/photos/6663562/pexels-photo-6663562.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/beauty-0.webp",
+        "alt": "Illustrative sample: Relaxation massage"
+      }
+    ]
+  },
+  "fitness": {
+    "industry": "Gyms, Fitness & Yoga",
+    "hero": {
+      "src": "https://images.pexels.com/photos/29149073/pexels-photo-29149073.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "fallback": "assets/industry-photos/fitness-0.webp",
+      "alt": "Illustrative Gyms, Fitness & Yoga imagery"
+    },
+    "items": [
+      {
+        "name": "Strength training",
+        "src": "https://images.pexels.com/photos/4720772/pexels-photo-4720772.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/fitness-0.webp",
+        "alt": "Illustrative sample: Strength training"
+      },
+      {
+        "name": "Yoga flow",
+        "src": "https://images.pexels.com/photos/23095852/pexels-photo-23095852.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/fitness-0.webp",
+        "alt": "Illustrative sample: Yoga flow"
+      },
+      {
+        "name": "Personal coaching",
+        "src": "https://images.pexels.com/photos/37963563/pexels-photo-37963563.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/fitness-0.webp",
+        "alt": "Illustrative sample: Personal coaching"
+      }
+    ]
+  },
+  "events": {
+    "industry": "Events & Wedding Planners",
+    "hero": {
+      "src": "https://images.pexels.com/photos/35985200/pexels-photo-35985200.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "fallback": "assets/industry-photos/events-0.webp",
+      "alt": "Illustrative Events & Wedding Planners imagery"
+    },
+    "items": [
+      {
+        "name": "Intimate wedding",
+        "src": "https://images.pexels.com/photos/38881969/pexels-photo-38881969.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/events-0.webp",
+        "alt": "Illustrative sample: Intimate wedding"
+      },
+      {
+        "name": "Corporate gathering",
+        "src": "https://images.pexels.com/photos/29284284/pexels-photo-29284284.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/events-0.webp",
+        "alt": "Illustrative sample: Corporate gathering"
+      },
+      {
+        "name": "Birthday celebration",
+        "src": "https://images.pexels.com/photos/16220886/pexels-photo-16220886.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/events-0.webp",
+        "alt": "Illustrative sample: Birthday celebration"
+      }
+    ]
+  },
+  "interiors": {
+    "industry": "Architects & Interior Designers",
+    "hero": {
+      "src": "https://images.pexels.com/photos/15242038/pexels-photo-15242038.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "fallback": "assets/industry-photos/interiors-0.webp",
+      "alt": "Illustrative Architects & Interior Designers imagery"
+    },
+    "items": [
+      {
+        "name": "Quiet residence",
+        "src": "https://images.pexels.com/photos/28905874/pexels-photo-28905874.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/interiors-1.webp",
+        "alt": "Illustrative sample: Quiet residence"
+      },
+      {
+        "name": "Workplace study",
+        "src": "https://images.pexels.com/photos/8606292/pexels-photo-8606292.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/interiors-0.webp",
+        "alt": "Illustrative sample: Workplace study"
+      },
+      {
+        "name": "Compact apartment",
+        "src": "https://images.pexels.com/photos/37070073/pexels-photo-37070073.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/interiors-3.webp",
+        "alt": "Illustrative sample: Compact apartment"
+      }
+    ]
+  },
+  "photography": {
+    "industry": "Photography & Production Studios",
+    "hero": {
+      "src": "https://images.pexels.com/photos/36697537/pexels-photo-36697537.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "fallback": "assets/industry-photos/photography-0.webp",
+      "alt": "Illustrative Photography & Production Studios imagery"
+    },
+    "items": [
+      {
+        "name": "Portrait session",
+        "src": "https://images.pexels.com/photos/36697537/pexels-photo-36697537.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/photography-0.webp",
+        "alt": "Illustrative sample: Portrait session"
+      },
+      {
+        "name": "Brand film",
+        "src": "https://images.pexels.com/photos/33899322/pexels-photo-33899322.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/photography-0.webp",
+        "alt": "Illustrative sample: Brand film"
+      },
+      {
+        "name": "Travel story",
+        "src": "https://images.pexels.com/photos/35554001/pexels-photo-35554001.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/photography-3.webp",
+        "alt": "Illustrative sample: Travel story"
+      }
+    ]
+  },
+  "car-rentals": {
+    "industry": "Automobile & Car Rentals",
+    "hero": {
+      "src": "https://images.pexels.com/photos/17183439/pexels-photo-17183439.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "fallback": "assets/industry-photos/car-rentals-0.webp",
+      "alt": "Illustrative Automobile & Car Rentals imagery"
+    },
+    "items": [
+      {
+        "name": "City compact",
+        "src": "https://images.pexels.com/photos/14818467/pexels-photo-14818467.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/car-rentals-0.webp",
+        "alt": "Illustrative sample: City compact"
+      },
+      {
+        "name": "Grand touring SUV",
+        "src": "https://images.pexels.com/photos/38715204/pexels-photo-38715204.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/car-rentals-0.webp",
+        "alt": "Illustrative sample: Grand touring SUV"
+      },
+      {
+        "name": "Comfort sedan",
+        "src": "https://images.pexels.com/photos/12681057/pexels-photo-12681057.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/car-rentals-0.webp",
+        "alt": "Illustrative sample: Comfort sedan"
+      }
+    ]
+  },
+  "coaching": {
+    "industry": "Coaching & Training Institutes",
+    "hero": {
+      "src": "https://images.pexels.com/photos/5212655/pexels-photo-5212655.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "fallback": "assets/industry-photos/coaching-0.webp",
+      "alt": "Illustrative Coaching & Training Institutes imagery"
+    },
+    "items": [
+      {
+        "name": "Web foundations",
+        "src": "https://images.pexels.com/photos/5483075/pexels-photo-5483075.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/coaching-1.webp",
+        "alt": "Illustrative sample: Web foundations"
+      },
+      {
+        "name": "Digital marketing",
+        "src": "https://images.pexels.com/photos/3183174/pexels-photo-3183174.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/coaching-2.webp",
+        "alt": "Illustrative sample: Digital marketing"
+      },
+      {
+        "name": "Business communication",
+        "src": "https://images.pexels.com/photos/18999481/pexels-photo-18999481.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/coaching-0.webp",
+        "alt": "Illustrative sample: Business communication"
+      }
+    ]
+  },
+  "adventure": {
+    "industry": "Camping & Adventure Experiences",
+    "hero": {
+      "src": "https://images.pexels.com/photos/14084003/pexels-photo-14084003.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "fallback": "assets/industry-photos/adventure-0.webp",
+      "alt": "Illustrative Camping & Adventure Experiences imagery"
+    },
+    "items": [
+      {
+        "name": "Lakeside camping",
+        "src": "https://images.pexels.com/photos/25412898/pexels-photo-25412898.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/adventure-0.webp",
+        "alt": "Illustrative sample: Lakeside camping"
+      },
+      {
+        "name": "Sunrise trek",
+        "src": "https://images.pexels.com/photos/31756936/pexels-photo-31756936.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/adventure-2.webp",
+        "alt": "Illustrative sample: Sunrise trek"
+      },
+      {
+        "name": "Weekend escape",
+        "src": "https://images.pexels.com/photos/29778608/pexels-photo-29778608.jpeg?auto=compress&cs=tinysrgb&w=1000",
+        "fallback": "assets/industry-photos/adventure-0.webp",
+        "alt": "Illustrative sample: Weekend escape"
+      }
+    ]
+  }
+}
