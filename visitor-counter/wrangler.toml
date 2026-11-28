@@ -1,0 +1,7 @@
+name = "admuse-visitor-counter"
+main = "worker.mjs"
+compatibility_date = "2026-01-01"
+[[d1_databases]]
+binding = "DB"
+database_name = "admuse-visits"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
