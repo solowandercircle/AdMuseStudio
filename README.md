@@ -54,3 +54,13 @@ The homepage is an overview. Each footer item opens a standalone page with share
 - `privacy.html` — Privacy
 
 Edit each HTML file for its page-specific content. The shared service and price arrays remain in app.js. Enquiry buttons link to contact.html with the related service preselected; pricing.html?plan=creator opens creator subscriptions. Upload all files at the repository root, including the assets folder.
+
+## Expanded portfolio (18 industries)
+`website-concepts.html` now links to 18 standalone fictional brands, each with six individual pages (108 demo pages). Search and category filters, item details, selected booking forms, local shopping cart/wishlist, media-kit downloads, sample dashboards and a browser-local brand preview are included as applicable. All sample data is fictional; demos are not real businesses. Forms never send data or payments, and there is no live availability or authentication. Live APIs, payments, actual media embeds, maps, accounts, and industry-specific backend integrations are separately scoped. Demo pages have `noindex, follow` to avoid search engines treating fictional businesses as real. Stock image CDN references have local vector fallbacks. See IMAGE-SOURCES.md.
+
+## Footer visitor counter
+A real shared counter is ready for activation, not preconnected. See `visitor-counter/README.md` for the Cloudflare Worker + D1 setup. Set `visitorCounterUrl` in `config.js` only after deployment. It counts approximate cumulative browser-days from activation, not verified unique visitors or historical traffic. No fabricated number appears. The main site footer displays the total on all ten main pages; demo pages do not increment the counter. Existing business email and WhatsApp settings are preserved from the supplied archive (blank until configured).
+
+
+## Industry image update
+All 18 demo sites have relevant imagery across home, catalogue, details, about, booking and contact pages. The catalogue and gallery use individually chosen photos; booking previews change imagery with the selection. Local AI-generated illustrations are stored in `assets/industry-photos/`. See `assets/industry-photo-manifest.json` and `IMAGE-SOURCES.md` for photo mappings. Remote Pexels URLs remain for 15 industries and could not be tested from the build environment. Every newly added remote demo image has a packaged local fallback; smaller general-industry fallbacks can be replaced with higher-resolution photos of your choice. The visitor-counter backend and main website configuration are unchanged.

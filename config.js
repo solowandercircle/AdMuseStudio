@@ -2,5 +2,6 @@
 window.ADMUSE = {
   email: "", // your verified business email, e.g. info@your-domain.in
   whatsapp: "", // digits only, international format, e.g. 919876543210
+  visitorCounterUrl: "", // paste deployed HTTPS Worker URL ending in /visits
   logo: "assets/logo.svg" // approved AdMuse Studio monogram
 };
